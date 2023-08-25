@@ -17,7 +17,7 @@ struct RemindMeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
