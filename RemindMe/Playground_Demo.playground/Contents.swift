@@ -1,30 +1,11 @@
-struct Queue<T> {
-    private var elements: [T] = []
-    
-    mutating func enqueue(_ value: T){
-        elements.append(value)
-    }
-    
-    mutating func dequeue() -> T? {
-        elements.isEmpty ? nil : elements.removeFirst()
-    }
-    
-    func isEmpty(){
-        elements.isEmpty
-    }
-    
-    //look at the first element
-    func peek() -> T?{
-        elements.first
-    }
-}
+import Foundation
 
 
-extension Queue: ExpressibleByArrayLiteral {
-    init(arrayLiteral elements: T...) {
-        self.elements = elements
-    }
-}
+//we need var cuz we are mutating the value later in the code
+var mydict : [String: String] = [:]
 
-var myQueue : Queue<Int> = [1,2,3,4,5,6]
-myQueue.dequeue()
+mydict["bozhong"] = "A big winner!"
+
+let extractedVal = mydict.updateValue("Wo Cao Ni Ma", forKey: "bozhong") as! String
+print(mydict["bozhong"] ?? "N/A")
+
