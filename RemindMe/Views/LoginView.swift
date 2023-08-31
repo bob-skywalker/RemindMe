@@ -8,51 +8,43 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    @StateObject var loginViewViewModel: LoginViewViewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(headerOne: "Remind Me", headerTwo: "Get things Done", rotation: 15, offsetY: -100, backgroundColor: .orange)
                 
                 // Login Form
                 
                 Form {
-                    TextField("Email Address", text: $email)
-                    SecureField("Password", text: $password)
+                    TextField("Email Address", text: $loginViewViewModel.email)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
                     
-                    Button {
-                        // Log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            
-                            Text("Log In")
-                                .foregroundColor(.white)
-                                .bold()
-                        }
+                    SecureField("Password", text: $loginViewViewModel.password)
+                    
+                    AppButton(buttonText: "Log In", buttonColor: .blue) {
+                        // Attempt to log in
                     }
-                    
                 }
                 
-                
                 // Create Account
-                VStack {
+                VStack(spacing: 15){
                     Text("New around here?")
+                        .font(.subheadline)
                     
                     NavigationLink {
                         RegisterView()
                     } label: {
                         Text("Create an account")
+                            .font(.title3)
+                            .bold()
                     }
                     
                 }
-                .padding(.bottom, 20)
                 
-                Spacer()
             }
             .ignoresSafeArea(.keyboard, edges: .bottom)
         }
