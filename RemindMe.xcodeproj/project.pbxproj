@@ -11,6 +11,7 @@
 		5C1052322A90000400DCF612 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1052312A90000400DCF612 /* MainView.swift */; };
 		5C1052342A90000500DCF612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1052332A90000500DCF612 /* Assets.xcassets */; };
 		5C1052372A90000500DCF612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1052362A90000500DCF612 /* Preview Assets.xcassets */; };
+		5C124DCF2AA1209C00B137D2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C124DCE2AA1209C00B137D2 /* HeaderView.swift */; };
 		5C6E5B0B2A99316700991C1D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6E5B0A2A99316700991C1D /* FirebaseAuth */; };
 		5C6E5B0D2A99316700991C1D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6E5B0C2A99316700991C1D /* FirebaseFirestore */; };
 		5C6E5B0F2A99316700991C1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6E5B0E2A99316700991C1D /* FirebaseFirestoreSwift */; };
@@ -39,6 +40,7 @@
 		5C1052332A90000500DCF612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1052362A90000500DCF612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C10523D2A90104300DCF612 /* Playground_Demo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground_Demo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5C124DCE2AA1209C00B137D2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5C6E5B102A99321E00991C1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5C6E5B162A99371200991C1D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5C6E5B182A99372700991C1D /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				5C6E5B242A99383200991C1D /* ToDoListView.swift */,
 				5C6E5B282A99387400991C1D /* ToDoListItemView.swift */,
 				5C6E5B1C2A99373800991C1D /* RegisterView.swift */,
+				5C124DCE2AA1209C00B137D2 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C6E5B192A99372700991C1D /* NewItemView.swift in Sources */,
+				5C124DCF2AA1209C00B137D2 /* HeaderView.swift in Sources */,
 				5C6E5B312A9938E400991C1D /* LoginViewViewModel.swift in Sources */,
 				5C6E5B392A99393500991C1D /* RegisterViewViewModel.swift in Sources */,
 				5C6E5B372A99392500991C1D /* ToDoListItemViewViewModel.swift in Sources */,
